@@ -1,0 +1,83 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+.main-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:90vh; 
+    background:rgb(164, 121, 164);
+}
+.ta-container{
+    background: rgb(212, 210, 210);
+    padding:20px 30px;
+    box-shadow:0 0 10px black;
+    border-radius:20px;
+}
+.heading{
+    text-align: center;
+    margin-bottom:20px;
+    color:rgb(176, 69, 176);
+}
+.ta-wrapper{
+    padding:0 20px;
+}
+.input-wrapper{
+ display:flex;
+ gap:20px;
+}
+#todo-input{
+padding:5px 20px;
+border-radius:10px;
+border:none;
+outline:none;
+}
+::placeholder{
+   color:black;
+}
+#submit{
+padding:5px 40px; 
+color:white;
+background: rgb(13, 149, 13);
+border-radius:20px;
+border:none;
+outline:none; 
+}
+
+.todo-item{
+    margin-top: 10px;
+    display:flex;
+   justify-content: space-between;
+}
+.todo-item input{
+padding:5px 20px;
+border-radius: 10px;
+border:none;
+outline:none;
+background:none;
+color:purple;
+}
+.action-items{
+    display:flex;
+    gap:25px;
+}
+/* .action-items i{
+    background-color: none;
+    border-radius:50%;
+    width:30px;
+    font-size: 20px;
+    height:30px;
+    border:1px solid rgb(33, 31, 33);
+    padding: 5px;
+} */
+.todo-item .action-items  .fa-check{
+    color:green;
+}
+.todo-item .action-items   .edit{
+    color:blue;
+}
+.todo-item .action-items .fa-trash{
+    color:red;
+}
